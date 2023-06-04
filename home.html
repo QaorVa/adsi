@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
+    <script src="script.js"></script>
     <title>Home Page | SIUL</title>
 </head>
 <body>
@@ -19,20 +20,54 @@
                     <h1 id="info">INFORMATION SYSTEM</h1>
                 </div>
                 <div class="line"></div>
-                <div class="menu">
+                <div class="menu" onclick="toggleDropdown(this)">
                     <img src="Images/carbon_finance.png" alt="">
                     <h2>FINANCE</h2>
                     <span>KEUANGAN</span>
+                    <div class="menu-dropdown">
+                        <div class="menu-dropdown-button">
+                            <button type="button"><a href="pembayaran.html">Pembayaran</a></button>
+                        </div>
+                    </div>
                 </div>
-                <div class="menu">
+                
+                <div class="menu" onclick="toggleDropdown(this)">
                     <img src="Images/icon-park-outline_all-application.png" alt="">
                     <h2>APPLICATION</h2>
                     <span>APLIKASI</span>
+                    <div class="menu-dropdown">
+                        <div class="menu-dropdown-button">
+                            <button type="button"><a href="wisuda.html">Yudisium & Wisuda</a></button>
+                        </div>
+                        <div class="menu-dropdown-button">
+                            <button type="button"><a href="datakelulusan.html">Data Kelulusan</a></button>
+                        </div>
+                        <div class="menu-dropdown-button">
+                            <button type="button"><a href="pengundurandir.html">Pengunduran Diri</a></button>
+                        </div>
+                        <div class="menu-dropdown-button">
+                            <button type="button"><a href="pengajuancuti.html">Pengajuan Cuti</a></button>
+                        </div>
+                        <div class="menu-dropdown-button">
+                            <button type="button"><a href="fasttrack.html">Pendaftaran Fast Track</a></button>
+                        </div>
+                    </div>
                 </div>
-                <div class="menu">
+                <div class="menu" onclick="toggleDropdown(this)">
                     <img src="Images/Vector.png" alt="">
                     <h2>STUDENTS AFFAIRS</h2>
                     <span>KEMAHASISWAAN</span>
+                    <div class="menu-dropdown">
+                        <div class="menu-dropdown-button">
+                            <button type="button"><a href="beasiswa.html">Beasiswa</a></button>
+                        </div>
+                        <div class="menu-dropdown-button">
+                            <button type="button"><a href="prestasi.html">Prestasi</a></button>
+                        </div>
+                        <div class="menu-dropdown-button">
+                            <button type="button"><a href="registrasi.html">Registrasi</a></button>
+                        </div>
+                    </div>
                 </div>
                 <div class="line"></div>
                 <div>
@@ -45,7 +80,93 @@
     </header>
     <main>
         <div class="container">
-
+            <div class="biodata">
+                <div class="head">
+                    <h2>BIODATA</h2>
+                </div>
+                <div id="biodata-main">
+                    <div class="biodata-image">
+                        <img src="Images/Rectangle 17.png" alt="">
+                    </div>
+                    <div class="biodata-text">
+                        <h2>215150400111069</h2>
+                        <h1>RICK, SOLDIER OF GOD</h1>
+                        <h3>Jenjang/Fakultas > <span class="isian"> S1 Ilmu Komputer</span></h3>
+                        <h3>Jurusan > <span class="isian"> Sistem Informasi</span></h3>
+                        <h3>Program Studi > <span class="isian"> Teknologi Informasi</span></h3>
+                        <h3>Seleksi > <span class="isian"> Seleksi Nasional Masuk Perguruan Tinggi Negeri</span></h3>
+                        <h3>Nomor Ujian > <span class="isian"> 121321140069</span></h3>
+                        <h3>Status: <span class="aktif"> AKTIF</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="survey">
+                    <div class="head">
+                        <h2>SURVEY</h2>
+                    </div>
+                    <div class="content-main">
+                        <div class="content-header" onclick="toggleDropdown(this)">
+                            <img src="Images/gridicons_dropdown.png" alt="">
+                            <h3>Judul Survey</h3>
+                        </div>
+                        <div class="content-text">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </p>
+                            <button type="button" class="survey-button"><a href="form.html">Link Survey</a></button>
+                        </div>
+                        <div class="content-header" onclick="toggleDropdown(this)">
+                            <img src="Images/gridicons_dropdown.png" alt="">
+                            <h3>Judul Survey</h3>
+                        </div>
+                        <div class="content-text">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </p>
+                            <button type="button" class="survey-button"><a href="form.html">Link Survey</a></button>
+                        </div>
+                        <div class="content-header" onclick="toggleDropdown(this)">
+                            <img src="Images/gridicons_dropdown.png" alt="">
+                            <h3>Judul Survey</h3>
+                        </div>
+                        <div class="content-text">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </p>
+                            <button type="button" class="survey-button"><a href="form.html">Link Survey</a></button>
+                        </div>
+                        <div class="tambah">
+                            <button type="button"> <a href="survey.html">Tambah</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pengumuman">
+                    <div class="head">
+                        <h2>PENGUMUMAN</h2>
+                    </div>
+                    <div class="content-main">
+                        <div class="content-header" onclick="toggleDropdown(this)">
+                            <img src="Images/gridicons_dropdown.png" alt="">
+                            <h3>Judul Pengumuman</h3>
+                        </div>
+                        <div class="content-text">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        </div>
+                        <div class="content-header" onclick="toggleDropdown(this)">
+                            <img src="Images/gridicons_dropdown.png" alt="">
+                            <h3>Judul Pengumuman</h3>
+                        </div>
+                        <div class="content-text">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        </div>
+                        <div class="content-header" onclick="toggleDropdown(this)">
+                            <img src="Images/gridicons_dropdown.png" alt="">
+                            <h3>Judul Pengumuman</h3>
+                        </div>
+                        <div class="content-text">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        </div>
+                        <div class="tambah">
+                            <button type="button"> <a href="pengumuman.html">Tambah</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer>

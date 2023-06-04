@@ -4,6 +4,8 @@ html, body {
     padding: 0;
   }
 
+/*nav*/
+
 nav {
     background-color: #ffffff;
     display: flex;
@@ -20,6 +22,7 @@ nav {
     background-color: #FFCF40;
     height: 10px;
 }
+
 
 .bigmenu {
     background-color: #ffffff;
@@ -42,8 +45,46 @@ nav {
     justify-content: center;
 }
 
-.menu h2 {
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    top: 15%; /* Position the dropdown below the menu */
+    width: 190px;
+    height: auto;
+    background-color: #ffffff;
+    border: 2px solid #FFCF40;
+    border-radius: 5px;
+    padding: 0px 0px;
+    z-index: 1;
+}
 
+.menu-dropdown.show {
+  display: block;
+}
+
+.menu-dropdown-button button {
+  width: 100%;
+  height: 30px;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 2px solid #FFCF40;
+  background-color: white;
+
+}
+
+.menu-dropdown-button a {
+  font-family: 'Garamond';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 10px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.menu h2 {
     margin: 0;
     font-family: 'Garamond';
     font-style: normal;
@@ -99,6 +140,9 @@ nav {
     margin-left: 15px;
 }
 
+/*nav*/
+
+/*main*/
 main {
   background-image: url('Images/tumblr_b7f1865e75340b9f5907c6f9277d6d92_fb6655b3_540\ 1.png');
   background-size: cover;
@@ -111,12 +155,282 @@ main {
 
 .container {
   display: flex;
-  width: 80%;
-  height: 1000px;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.95);
   box-shadow: 0px 0px 50px 45px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
+  align-items: center;
+  padding-bottom: 100px;
 }
 
+/*main*/
+
+/*biodata*/
+.head {
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+  display: flex;
+  text-indent: 20px;
+  border-bottom: 3px solid #FFCF40;
+  border-radius: 10px 10px 0px 0px;
+  align-items: center;
+}
+
+.head h2 {
+  font-family: 'Garamond';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 10px;
+/* identical to box height, or 50% */
+
+display: flex;
+align-items: center;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+.biodata {
+  width: 85%;
+  height: 458px;
+  display: flex;
+  border: 3px solid #FFCF40;
+  border-radius: 10px;
+  margin-top: 50px;
+  flex-direction: column;
+}
+
+#biodata-main {
+  padding-top: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.biodata-image img{
+  width: 210px;
+}
+
+.biodata-text {
+  font-family: 'Garamond';
+  padding-left: 30px;
+}
+
+.biodata-text h2 {
+  color: #A67C00;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 10px;
+  /* or 36% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.biodata-text h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 10px;
+  /* identical to box height, or 31% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.biodata-text h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 10px;
+  /* identical to box height, or 50% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+
+  color: #5F5E5E;
+}
+
+.isian {
+  color: black;
+  line-height: .8;
+}
+
+.aktif {
+  color: blue;
+  line-height: 1.5;
+}
+
+.isian , .aktif {
+  text-indent: 8px;
+}
+/*biodata*/
+
+/*konten survey dan pengumuman*/
+.content {
+  display: flex;
+  width: 85%;
+}
+
+.survey{
+  flex: 1;
+  margin-right: 40px;
+}
+
+.pengumuman {
+  flex: 2;
   
+}
+
+.survey, .pengumuman {
+  height: auto;
+  min-height: 100px;
+  border: 3px solid #FFCF40;
+  border-radius: 10px;
+  margin-top: 50px;
+  flex-direction: column;
+  
+}
+
+.content-main {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 12px;
+}
+
+.content-header {
+  width: 95%;
+  height: 40px;
+  margin-top: 12px;
+  background-color: #E8E8E8;
+  border: 3px solid #FFCF40;
+  border-radius: 10px;
+  align-items: center;
+  display: flex;
+}
+
+.content-header h3 {
+  font-family: 'Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 10px;
+  text-indent: 10px;
+}
+
+.content-header img {
+  margin-left: 2px;
+  width: 35px;
+}
+
+.content-text {
+  display: none;
+  width: 95%;
+  height: auto;
+  background-color: #ffffff;
+  border-bottom: 3px solid #FFCF40;
+  border-left:  3px solid #FFCF40;
+  border-right:  3px solid #FFCF40;
+  border-radius: 0px 0px 10px 10px;
+  align-items: center;
+  display: none;
+}
+ 
+.content-text.show {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-header img {
+  transform: rotate(-90deg) ;
+}
+
+.content-header.active img {
+  transform: rotate(0deg) ;
+}
+
+.content-text p {
+  font-family: 'Garamond';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 10px;
+/* or 83% */
+
+display: flex;
+align-items: center;
+text-align: justify;
+letter-spacing: 2px;
+padding:0px 10px 0px 10px;
+}
+
+.content-text button {
+  width: 40%;
+  height: 30px;
+  margin-bottom: 10px;
+  border: 1px solid #FFCF40;
+  border-radius: 10px;
+}
+
+.content-text button:hover {
+  background-color: #ffffff;
+  border: 3px solid #FFCF40;
+}
+
+.content-text button a{
+  font-family: 'Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.tambah {
+  position:relative;
+}
+
+.tambah button{
+  width: 80px;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 240px;
+  background: #A6FFA4;
+  border: 0;
+  border-radius: 10px;
+}
+
+.tambah button:hover {
+  background: white;
+  border: 3px solid #A6FFA4;
+}
+
+.tambah button a {
+  font-family: 'Garamond';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 10px;
+  letter-spacing: 2px;
+  color: black;
+  text-decoration: none;
+}
+
+.pengumuman .tambah button {
+  margin-left: 555px;
+}
+/*konten survey dan pengumuman*/
