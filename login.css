@@ -24,7 +24,7 @@ body {
   }
 
   .column:first-child {
-    background: url('tumblr_b7f1865e75340b9f5907c6f9277d6d92_fb6655b3_540\ 1.png');
+    background: url('Images/tumblr_b7f1865e75340b9f5907c6f9277d6d92_fb6655b3_540\ 1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -92,7 +92,7 @@ input[type="submit"]:hover {
 }
 
 #username {
-    background-image: url('user.png'); /* Add image path */
+    background-image: url('Images/user.png'); /* Add image path */
     background-size: 7%;
     background-repeat: no-repeat;
     background-position: 20px center;
@@ -101,7 +101,7 @@ input[type="submit"]:hover {
 }
 
 #password {
-    background-image: url('lock.png'); /* Add image path */
+    background-image: url('Images/lock.png'); /* Add image path */
     background-size: 7%;
     background-repeat: no-repeat;
     background-position: 20px center;

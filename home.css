@@ -99,98 +99,24 @@ nav {
     margin-left: 15px;
 }
 
-footer {
-    background-color: black;
-    padding: 56px 70px 25px 70px;
-  }
-  
-  .highlight{
-    color: #A67C00;
-  }
+main {
+  background-image: url('Images/tumblr_b7f1865e75340b9f5907c6f9277d6d92_fb6655b3_540\ 1.png');
+  background-size: cover;
+  background-position: center;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  footer > .footer-item > .left > h4 {
-    font-size: 20px;
-    font-weight: 500;
-    color: white;
-    width: 100%;
-    margin-top: 0px;
-  }
-  
-  .company-footer {
-    font-size: 14px;
-    font-weight: 400;
-    color: white;
-    opacity: 0.7;
-    margin-top: 10px;
-  }
-  
-  .title-footer {
-    font-size: 14px;
-    font-weight: 500;
-    color: white;
-    opacity: 0.8;
-  }
-  
-  .fa-envelope,
-  .fa-phone-volume {
-    color: #cccccc;
-  }
-  
-  .right {
-    display: flex;
-  }
-  
-  .right-item {
-    margin-left: 50px;
-  }
-  
-  .right-item a,
-  .right-item span {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    margin-bottom: 12px;
-  }
-  
-  .icon-footer {
-    margin-top: -12px;
-  }
-  
-  .right-item a {
-    font-size: 12px;
-    font-weight: 400;
-    color: white;
-    opacity: 0.8;
-    text-decoration: none;
-  }
-  
-  .right-item i {
-    grid-column: 1;
-    padding-top: 10px;
-    padding-right: 5px;
-  }
-  
-  hr {
-    color: white;
-  }
-  
-  .footer-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  footer > .socmed {
-    text-decoration: none;
-  }
-  
-  .copyright {
-    margin-right: 1100px;
-    font-size: 12px;
-    font-weight: 400;
-    color: white;
-    opacity: 0.7;
-    margin-top: 10px;
-  }
-
+.container {
+  display: flex;
+  width: 80%;
+  height: 1000px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 0px 50px 45px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+}
 
   
