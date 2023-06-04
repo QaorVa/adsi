@@ -434,3 +434,93 @@ padding:0px 10px 0px 10px;
   margin-left: 555px;
 }
 /*konten survey dan pengumuman*/
+
+/* FOOTER */
+footer {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex; /* Add this line */
+  justify-content: space-between; /* Add this line */
+  align-items: center; /* Add this line */
+}
+
+.left-section,
+.middle-section,
+.right-section {
+  flex-basis: 30%; /* Adjust the value to control the width of each section */
+}
+
+.left-section {
+  font-family: 'Garamond';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 15px;
+  margin-right: 12px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.middle-section a {
+  margin: 0 5px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+
+.contact-details {
+  text-align: left;
+  line-height: 0.5; /* Adjust the line height as desired */
+}
+
+.contact-details h2 {
+  font-family: 'Garamond';
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.contact-info img {
+  width: 300px;
+  height: auto;
+}
+
+.contact-info .line {
+  width: 0%;
+  height: 150px;
+  background-color: #FFCF40;
+}
+
+.contact-details p {
+  font-family: 'Garamond';
+  font-weight: 300;
+  color: #4E4E4E;
+}
+
+.image-container {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.text-below-image {
+  font-family: 'Garamond';
+  font-weight: 800;
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+/* FOOTER ENDS */

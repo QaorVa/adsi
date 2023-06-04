@@ -4,100 +4,143 @@ html, body {
     padding: 0;
   }
 
+/*nav*/
+
 nav {
-    background-color: #ffffff;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    margin: 0 20px;
-  }
+  background-color: #ffffff;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin: 0 20px;
+}
 
 #logo {
-    width: 200px;
+  width: 200px;
 }
 
 .border {
-    background-color: #FFCF40;
-    height: 10px;
+  background-color: #FFCF40;
+  height: 10px;
 }
 
+
 .bigmenu {
-    background-color: #ffffff;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    margin: 0 10px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin: 0 10px;
 }
 
 .menu {
-    width: 190px;
-    height: 85px; /* Change height to "auto" to allow dynamic height based on content */
-    margin: 0 5px;
-    border: 5px solid #FFCF40;
-    border-radius: 5px;
-    text-align: center; /* Align the content in the center */
-    display: flex;
-    flex-direction: column; /* Display the flex items in a column */
-    align-items: center;
-    justify-content: center;
+  width: 190px;
+  height: 85px; /* Change height to "auto" to allow dynamic height based on content */
+  margin: 0 5px;
+  border: 5px solid #FFCF40;
+  border-radius: 5px;
+  text-align: center; /* Align the content in the center */
+  display: flex;
+  flex-direction: column; /* Display the flex items in a column */
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  top: 15%; /* Position the dropdown below the menu */
+  width: 190px;
+  height: auto;
+  background-color: #ffffff;
+  border: 2px solid #FFCF40;
+  border-radius: 5px;
+  padding: 0px 0px;
+  z-index: 1;
+}
+
+.menu-dropdown.show {
+display: block;
+}
+
+.menu-dropdown-button button {
+width: 100%;
+height: 30px;
+border-top: 0;
+border-right: 0;
+border-left: 0;
+border-bottom: 2px solid #FFCF40;
+background-color: white;
+
+}
+
+.menu-dropdown-button a {
+font-family: 'Garamond';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 10px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
 }
 
 .menu h2 {
-
-    margin: 0;
-    font-family: 'Garamond';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 15px;
-    line-height: 10px;
-    text-align: center;
+  margin: 0;
+  font-family: 'Garamond';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 10px;
+  text-align: center;
 }
 
 .menu span {
-    margin-top: 10px;
-    font-family: 'Garamond';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 10px;
-    text-align: center;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  margin-top: 10px;
+  font-family: 'Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .menu img {
-    width: 35px;
-    margin-bottom: 5px;
+  width: 35px;
+  margin-bottom: 5px;
 }
 
 .line {
-    width: 0px;
-    height: 86px;
-    border: 4px solid #FFCF40;
-    border-radius: 5px;
-    background-color: #FFCF40;
-    margin: 0 6px;
+  width: 0px;
+  height: 86px;
+  border: 4px solid #FFCF40;
+  border-radius: 5px;
+  background-color: #FFCF40;
+  margin: 0 6px;
 }
 
 #title {
-    font-family: 'Garamond';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 15px;
-    margin-right: 12px;
-    text-align: right;
-    text-transform: uppercase;
+  font-family: 'Garamond';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 15px;
+  margin-right: 12px;
+  text-align: right;
+  text-transform: uppercase;
 }
 
 #info {
-    color: #A67C00;
+  color: #A67C00;
 }
 
 #profile {
-    width: 86px;
-    margin-left: 15px;
+  width: 86px;
+  margin-left: 15px;
 }
+
+/*nav*/
 
 main {
   background-image: url('Images/tumblr_b7f1865e75340b9f5907c6f9277d6d92_fb6655b3_540\ 1.png');
@@ -192,28 +235,29 @@ input {
     margin-left: 25px;
 }
 
-button {
-    margin-top: 25px;
-    margin-left: 1125px;
-    width: 10%;
-    padding: 10px;
-    font-family: 'Garamond';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    display: inline-block;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 2px;
-    overflow: hidden;
-    border-radius: 25px;
-    background-color: lightgreen;
-    border: 3px solid lightgreen;
+.registrasi button {
+  margin-top: 25px;
+  margin-left: 77%;
+  width: 20%;
+  min-width: 100px;
+  padding: 10px;
+  font-family: 'Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 2px;
+  overflow: hidden;
+  border-radius: 25px;
+  background-color: lightgreen;
+  border: 3px solid lightgreen;
 }
 
-button:hover {
-    background-color: transparent;
-    border-color: lightgreen;
+.registrasi button:hover {
+  background-color: transparent;
+  border-color: lightgreen;
 }
 
 /* REGISTRASI ENDS */
@@ -237,7 +281,7 @@ footer {
     font-family: 'Garamond';
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 15px;
     margin-right: 12px;
     text-align: right;

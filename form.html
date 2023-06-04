@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="form.css">
+    <script src="script.js"></script>
     <title>Form | SIUL</title>
 </head>
 <body>
@@ -19,26 +20,61 @@
                     <h1 id="info">INFORMATION SYSTEM</h1>
                 </div>
                 <div class="line"></div>
-                <div class="menu">
+                <div class="menu" onclick="toggleDropdown(this)">
                     <img src="Images/carbon_finance.png" alt="">
                     <h2>FINANCE</h2>
                     <span>KEUANGAN</span>
+                    <div class="menu-dropdown">
+                        <div class="menu-dropdown-button">
+                            <button type="button"><a href="pembayaran.html">Pembayaran</a></button>
+                        </div>
+                    </div>
                 </div>
-                <div class="menu">
+                
+                <div class="menu" onclick="toggleDropdown(this)">
                     <img src="Images/icon-park-outline_all-application.png" alt="">
                     <h2>APPLICATION</h2>
                     <span>APLIKASI</span>
+                    <div class="menu-dropdown">
+                        <div class="menu-dropdown-button">
+                            <button type="button"><a href="wisuda.html">Yudisium & Wisuda</a></button>
+                        </div>
+                        <div class="menu-dropdown-button">
+                            <button type="button"><a href="datakelulusan.html">Data Kelulusan</a></button>
+                        </div>
+                        <div class="menu-dropdown-button">
+                            <button type="button"><a href="pengundurandiri.html">Pengunduran Diri</a></button>
+                        </div>
+                        <div class="menu-dropdown-button">
+                            <button type="button"><a href="pengajuancuti.html">Pengajuan Cuti</a></button>
+                        </div>
+                        <div class="menu-dropdown-button">
+                            <button type="button"><a href="fasttrack.html">Pendaftaran Fast Track</a></button>
+                        </div>
+                    </div>
                 </div>
-                <div class="menu">
+                <div class="menu" onclick="toggleDropdown(this)">
                     <img src="Images/Vector.png" alt="">
                     <h2>STUDENTS AFFAIRS</h2>
                     <span>KEMAHASISWAAN</span>
+                    <div class="menu-dropdown">
+                        <div class="menu-dropdown-button">
+                            <button type="button"><a href="beasiswa.html">Beasiswa</a></button>
+                        </div>
+                        <div class="menu-dropdown-button">
+                            <button type="button"><a href="prestasi.html">Prestasi</a></button>
+                        </div>
+                        <div class="menu-dropdown-button">
+                            <button type="button"><a href="registrasi.html">Registrasi</a></button>
+                        </div>
+                    </div>
                 </div>
                 <div class="line"></div>
                 <div>
                     <img src="Images/Ellipse 1.png" alt="" id="profile">
                 </div>
             </div>
+            
         </nav>
         <div class="border"></div>
     </header>
@@ -60,7 +96,7 @@
                     <h2>Pertanyaan 5</h2>
                     <textarea class="form-text"></textarea>
                 </div>
-                <button type="button">Submit
+                <button type="button">Submit</button>
             </div>
     </main>
     <footer>
